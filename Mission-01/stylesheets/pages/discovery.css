@@ -1,1 +1,116 @@
 /* CSS 작성 */
+
+/* header */
+.header {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.brand {
+  margin: 100px 0 48px;
+}
+
+.brand__link {
+  display: block;
+  width: 176px;
+}
+
+.brand__image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* discovery */
+.discovery {
+  width: 1036px;
+  margin: 0 auto;
+}
+
+/* discovery__headLine */
+.discovery__headLine {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.discovery__title,
+.discovery__subTitle {
+  margin: 0;
+  font-weight: 500;
+}
+
+.discovery__title {
+  font-size: 24px;
+}
+
+.divider {
+  margin: 0 10px;
+  color: var(--gray--600);
+}
+
+.discovery__subTitle {
+  font-size: 16px;
+  color: var(--gray--600);
+}
+
+/* discovery__list */
+.discovery__list {
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.discovery__item {
+  margin: 16px 8px 0;
+  float: left;
+}
+
+.discovery__link {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 310px;
+  border: 1px solid var(--gray--500);
+}
+
+.cardLink--large {
+  width: 502px;
+}
+
+.cardLink--small {
+  width: 243px;
+}
+
+.discovery__button {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 20px;
+  bottom: 20px;
+  background: var(--opacity--20) url(./../../assets/icon/angle-right-square.svg)
+    no-repeat 100% 50%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background 0.3s;
+}
+
+.discovery__link:hover {
+  border: 1px solid var(--blue--600);
+}
+
+.discovery__link:hover .discovery__button,
+.discovery__link:focus .discovery__button {
+  width: auto;
+  padding: 12px 40px 13px 20px;
+  color: var(--white);
+  background-color: var(--blue--600);
+}
+
+.discovery__link:hover .discovery__button::before,
+.discovery__link:focus .discovery__button::before {
+  content: attr(aria-label);
+}
